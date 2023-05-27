@@ -56,20 +56,107 @@
     */
 
     /* 👉 Task 1 - [HINT] only the flex container needs to be manipulated */
+    #flexContainer1 {
+      display: flex;
+      justify-content: space-around;
+    } 
 
     /* 👉 Task 2 - [HINT] the flex container needs to change direction */
+    #flexContainer2{
+      display: flex;
+      flex-direction: column;
+      justify-content:space-between;
+      align-items: center;
+    }
 
     /* 👉 Task 3 - [HINT] the flex direction can be reversed */
+    #flexContainer3{
+      display:flex;
+      flex-direction: column-reverse;
+      justify-content: flex-end;
+      align-items: end;
+    }
 
     /* 👉 Task 4 - [HINT] the flex items need a new order */
+    #flexContainer4{
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-end;
+    }
+    #flexContainer4 .flexItem:nth-child(1) {
+      order: 2;
+    }
+    #flexContainer4 .flexItem:nth-child(2) {
+      order: 3;
+    }
+    #flexContainer4 .flexItem:nth-child(3) {
+      order: 1;
+    }
 
     /* 👉 Task 5 - [HINT] research align-self */
+    #flexContainer5 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    #flexContainer5 .flexItem:nth-child(1) {
+    }
+    #flexContainer5 .flexItem:nth-child(2) {
+      align-self:center;
+    }
+    #flexContainer5 .flexItem:nth-child(3) {
+
+    }
 
     /* 👉 Task 6 - [HINT] flex items can be flex containers */
+    #flexContainer6 {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: start;
+      align-items: flex-end;
+    }
+    #flexContainer6 .flexItem:nth-child(1) {
+      justify-content: flex-end;
+    }
+    #flexContainer6 .flexItem:nth-child(2) {
+      align-items: flex-end;
+    }
+    #flexContainer6 .flexItem:nth-child(3) {
+      align-self: flex-start;
+    }
 
     /* 👉 Task 7 - [HINT] research flex-grow */
+    #flexContainer7 {
+      display: flex;
+      flex-direction: row;
+    }
+    #flexContainer7 .flexItem:nth-child(1) {
+    }
+    #flexContainer7 .flexItem:nth-child(2) {
+      flex-grow: 1;
+    }
+    #flexContainer7 .flexItem:nth-child(3) {
+      flex-grow: 2;
+    }
 
     /* 👉 Task 8 - [HINT] you got this! */
+    #flexContainer8 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+    #flexContainer8 .flexItem:nth-child(1) {
+      justify-content: flex-end;
+      align-self: flex-start;
+    }
+    #flexContainer8 .flexItem:nth-child(2) {
+    }
+    #flexContainer8 .flexItem:nth-child(3) {
+      align-self: flex-end;
+      justify-content: flex-start;
+    }
+
 
 
     /*
